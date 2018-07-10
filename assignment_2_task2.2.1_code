@@ -1,0 +1,17 @@
+# ASSIGNMENT 2 : Task 2.2.1:
+
+Write a Python program using function concept that maps list of words into a list of integers
+representing the lengths of the corresponding words.
+
+Hint: If a list [ ab,cde,erty] is passed on to the python function output should come as [2,3,4]
+Here 2,3 and 4 are the lengths of the words in the list.
+
+## NOTE: Please refer README.md file to get instruction to run the program
+
+### Code: 
+	
+	word_list= ["Belgium","France","Englad","Croatia"]
+	print("Word lenght List:",list(map(len,word_list)))
+	
+### Output Reference: 
+	screenshot_ass2_task2.2.1.png

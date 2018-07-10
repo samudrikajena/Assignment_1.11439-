@@ -1,0 +1,25 @@
+# ASSIGNMENT 2 : Task 2.1.2:
+
+Write a function filter_long_words() that takes a list of words and an integer n and returns the list
+of words that are longer than n.
+
+## NOTE: Please refer README.md file to get instruction to run the program
+
+### Code: 
+
+     #filter_long_words function accepts list of words and a number and results in list of filtered words
+	
+	def filter_long_words(sample_data,num):
+    	  res=[]
+    	  for i in sample_data:
+        	if len(i)>num:
+           	  res.append(i)
+    	  return res
+
+	sample_data=["India","Japan","Russia","Argentina","England"]
+	longer_words= filter_long_words(sample_data,5)
+
+	print("Longer Word List: ",longer_words)
+
+### Output Reference: 
+	screenshot_ass2_task2.1.2.png

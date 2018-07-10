@@ -1,0 +1,25 @@
+# ASSIGNMENT 2 : Task 2.2.2:
+
+Write a Python function which takes a character (i.e. a string of length 1) and returns True if it is
+a vowel, False otherwise.
+
+NOTE: The solution shared through Github should contain the source code used and
+the screenshot of the output.
+
+## NOTE: Please refer README.md file to get instruction to run the program
+
+### Code: 
+	
+	#is_vowel function receives a chareter as parameter and returns True/ False
+	def is_vowel(char):
+		vow_list=['a','e','i','o','u']
+		if char in vow_list:
+			return True
+		return False
+
+	char=input("Enter a character:")
+	print("Entered character: ",char)
+	print("Is entered character a vowel?: ",is_vowel(char))
+	
+### Output Reference: 
+	screenshot_ass2_task2.2.2.png

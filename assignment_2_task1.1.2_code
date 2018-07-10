@@ -1,0 +1,42 @@
+# ASSIGNMENT 2 : Task 1.1.2:
+
+Write a Python program to implement your own myfilter() function which works exactly like
+Python's built-in function filter()
+
+## NOTE: Please refer README.md file to get instruction to run the program
+
+### Code: 
+
+	# is_even function provides filtered even numbers from passed number list
+	# @param : num_list [list of numbers]
+
+	def is_even(num_list):
+		res_list = []
+		for n in num_list[:]:
+			if n%2 == 0:            
+				res_list.append(n)
+		return(res_list)
+
+	# is_odd function provides filtered even numbers from passed number list
+	# @param : num_list [list of numbers]
+
+	def is_odd(num_list):
+		res_list = []
+		for n in num_list[:]:
+			if n%2 != 0:           
+				res_list.append(n)
+		return(res_list)
+
+	# myfilter function provides even and odd numbers
+	# @param: func [functions to calculate even or odd]
+	# @param: num_list [list of numbers]
+
+	def myfilter(func, num_list):              
+		return(func(num_list))
+
+	num_list = [10,5,78,13,12,765,7,113]
+	print("Even Numbers: ", myfilter(is_even, num_list))
+	print("Odd Numbers: ", myfilter(is_odd, num_list))
+	
+### Output Reference: 
+	screenshot_ass2_task1.1.2.png

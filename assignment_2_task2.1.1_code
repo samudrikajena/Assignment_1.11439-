@@ -1,0 +1,44 @@
+# ASSIGNMENT 2 : Task 2.1.1:
+
+Write a Python Program(with class concepts) to find the area of the triangle using the below formula.
+
+area = (s(s-a)(s-b)(s-c)) * 0.5
+Function to take the length of the sides of triangle from user should be defined in the parent class and function to
+calculate the area should be defined in subclass.
+
+## NOTE: Please refer README.md file to get instruction to run the program
+
+### Code: 
+
+		import math #import math library to script
+
+		class Triangle(object):        #parent class
+			def __init__(self, side1,side2,side3):
+				self.side1=side1
+				self.side2=side2
+				self.side3=side3
+				
+		class Area(Triangle):  #child class avails properties of parent class Triangle
+			def __init__(self,*args):
+				super(Area,self).__init__(*args)
+					
+			#funtion which calculate area of triangle
+			def calculate_area(self): 
+					#check for triangle inequality
+					self.sum1=self.side1+self.side2
+					self.sum2=self.side1+self.side3
+					self.sum3=self.side2+self.side3
+					
+					if(self.sum1>self.side3 and self.sum2>self.side2 and self.sum3>self.side1):
+						self.s= (self.side1+self.side2+self.side3)*0.5
+						self.area= (self.s*(self.s-self.side1)*(self.s-self.side2)*(self.s-self.side3))**0.5
+						return self.area
+					else:
+						return "Please provide valid length for each sides of Triangle"             
+
+		triangle=Area(3,4,5)  
+		print("Area of Triangle: ",triangle.calculate_area())
+
+
+### Output Reference: 
+	screenshot_ass2_task2.1.1.png

@@ -1,0 +1,31 @@
+# ASSIGNMENT 2 : Task 1.1.1:
+
+Write a Python Program to implement your own myreduce() function which works exactly like
+Python's built-in function reduce()
+
+## NOTE: Please refer README.md file to get instruction to run the program
+
+### Code: 
+
+	# add_number function 
+	# @param: num_list [contains list of numbers]
+
+	def add_number(num_list):
+		result = 0
+		for i in num_list[:]:
+			result+=i
+		return result
+
+	# myreduce function 
+	# @param: func [contains add_number function] 
+	# @param: num_list [contains list of numbers]
+
+	def myreduce(func, num_list):        
+		return(func(num_list))
+
+	num_list = [10,5,9,7,3]
+
+	print("Addition of Numbers: ", myreduce(add_number, num_list))
+
+### Output Reference: 
+	screenshot_ass2_task1.1.1.png
