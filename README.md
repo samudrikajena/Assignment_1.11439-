@@ -1,10 +1,8 @@
-# Assignment_1.11439
+# Assignment_2.11439
 
-# ACADGILD DATASCIENCE Course Assignment 1 
+# ACADGILD DATASCIENCE Course Assignment 2 
 
-
-
-This repository contains all tasks given in Assignment-1 during the course of Datascience provided by ACADGILD.
+This repository contains all tasks given in Assignment-2 during the course of Datascience provided by ACADGILD.
 To run assignments please follow below necessary points
 
 ### Installation Instructions
